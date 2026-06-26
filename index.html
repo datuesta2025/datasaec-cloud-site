@@ -8,8 +8,6 @@
   <link rel="stylesheet" href="css/site.css">
 </head>
 <body>
-  <div class="top-bar">Soluciones en gestión documental, archivística y digitalización</div>
-
   <header class="site-header">
     <div class="container header-inner">
       <a href="/" class="brand">
@@ -22,37 +20,45 @@
       </button>
       <nav id="site-nav" class="site-nav">
         <a href="/" aria-current="page">Inicio</a>
-        <a href="#servicios">Servicios</a>
+        <div class="nav-has-submenu">
+          <button type="button" aria-expanded="false">Soluciones</button>
+          <div class="nav-submenu">
+            <a href="https://datasaec.com/servicios/">Data Structure</a>
+            <a href="https://datasaec.com/datacad/">Data CAD</a>
+            <a href="https://datasaec.com/datacadcheck/">Data Check</a>
+            <a href="https://datasaec.com/datastore/">Data Store</a>
+            <a href="https://datasaec.com/datadigital/">Data Digital</a>
+            <a href="https://datasaec.com/datacloud/">Data Cloud</a>
+          </div>
+        </div>
+        <a href="https://datasaec.com/nosotros/">Nosotros</a>
         <a href="contacto.html">Contacto</a>
-        <a href="contacto.html#formulario" class="nav-cta">Agenda una reunión</a>
       </nav>
     </div>
   </header>
 
   <main>
-    <section class="hero section-bg-fondo1">
-      <div class="container hero-grid">
+    <section class="hero section-bg-fondo1 section-on-dark">
+      <div class="container-wide hero-grid">
         <div class="hero-content">
           <h1>Convierte tus documentos y archivos en tu mayor fortaleza</h1>
           <p class="hero-lead">Soluciones Integrales en Gestión Documental, Archivística y Digitalización</p>
-          <p style="text-align:center;margin-top:2rem;">
-            <a href="contacto.html#formulario" class="btn btn-primary">Agenda una reunión</a>
-          </p>
+          <div class="hero-cta">
+            <a href="contacto.html#formulario" class="btn btn-primary">
+              Agenda una reunión
+              <span class="btn-icon" aria-hidden="true">
+                <svg viewBox="0 0 448 512"><path d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z"/></svg>
+              </span>
+            </a>
+          </div>
         </div>
         <div class="hero-image-wrap">
-          <img
-            class="hero-image"
-            src="images/compu.png"
-            alt="Ilustración de gestión documental digital"
-            width="750"
-            height="522"
-            loading="eager"
-          >
+          <img class="hero-image" src="images/compu.png" alt="Ilustración de gestión documental digital" width="750" height="522" loading="eager">
         </div>
       </div>
     </section>
 
-    <section id="servicios" class="section section-dark">
+    <section id="servicios" class="section section-bg-fondo1 section-on-dark section-tight-top">
       <div class="container">
         <div class="section-header">
           <h2>Organización, Control y Acceso Inteligente</h2>
@@ -60,7 +66,7 @@
         <div class="services-grid">
           <article class="service-card">
             <img src="images/gestion-documental.png" alt="" width="150" height="150">
-            <h3>Gestión Documental</h3>
+            <h3>Gestión<br>Documental</h3>
             <p>Permite organizar, controlar y proteger la información de la empresa, asegurando acceso rápido, eficiente y seguro. Formatos coherentes y normatizados.</p>
           </article>
           <article class="service-card">
@@ -71,72 +77,85 @@
           <article class="service-card">
             <img src="images/digitalizacion.png" alt="" width="150" height="150">
             <h3>Digitalización Documental</h3>
-            <p>Convierte los archivos físicos en documentos digitales seguros y accesibles.</p>
+            <p>Convierte los archivos físicos en documentos digitales seguros y accesibles. Clasificación, codificación y metadata asistida con inteligencia artificial.</p>
           </article>
         </div>
-        <p class="service-note">Clasificación, codificación y metadata asistida con inteligencia artificial.</p>
+      </div>
+    </section>
+
+    <section class="sectors-title section-bg-fondo1 section-on-dark">
+      <div class="container section-header">
+        <h2>Soluciones a la medida para cada tipo de organización</h2>
       </div>
     </section>
 
     <section class="section section-bg-fondo2">
-      <div class="container">
-        <div class="section-header section-dark">
-          <h2>Soluciones a la medida para cada tipo de organización</h2>
-        </div>
-        <div class="sectors-grid">
-          <article class="sector-block">
-            <img class="sector-image" src="images/sector-publico.png" alt="Sector público" width="650" height="568" loading="lazy">
-          </article>
-          <article class="sector-block section-light-text">
-            <h3>Sector Público</h3>
-            <p>Gestión responsable, siempre dentro del marco legal vigente.</p>
-            <p>Garantía de cumplir con la normatividad en Gestión Documental y Archivística, transparencia de la información y protección de datos personales.</p>
-          </article>
-        </div>
+      <div class="container-wide sectors-grid">
+        <article class="sector-block">
+          <img class="sector-image" src="images/sector-publico.png" alt="Sector público" width="650" height="568" loading="lazy">
+        </article>
+        <article class="sector-block section-on-light">
+          <h3>Sector Público</h3>
+          <p>Gestión responsable, siempre dentro del marco legal vigente.</p>
+          <p>Garantía de cumplir con la normatividad en Gestión Documental y Archivística, transparencia de la información y protección de datos personales.</p>
+        </article>
       </div>
     </section>
 
     <section class="section section-bg-fondo3">
-      <div class="container">
-        <div class="sectors-grid">
-          <article class="sector-block section-light-text">
-            <h3>Sector Privado</h3>
-            <p>Optimización de la relación Costo/Beneficio en el manejo de la información, documentación y archivos.</p>
-            <p>Automatización de flujos de trabajo e información, así como optimización de procesos para un control total de las operaciones.</p>
-          </article>
-          <article class="sector-block">
-            <img class="sector-image sector-image-offset" src="images/sector-privado.png" alt="Sector privado" width="650" height="613" loading="lazy">
-          </article>
-        </div>
+      <div class="container-wide sectors-grid">
+        <article class="sector-block section-on-light">
+          <h3>Sector Privado</h3>
+          <p>Optimización de la relación Costo/Beneficio en el manejo de la información, documentación y archivos.</p>
+          <p>Automatización de flujos de trabajo e información, así como optimización de procesos para un control total de las operaciones.</p>
+        </article>
+        <article class="sector-block">
+          <img class="sector-image sector-image-offset" src="images/sector-privado.png" alt="Sector privado" width="650" height="613" loading="lazy">
+        </article>
       </div>
     </section>
 
-    <section class="section section-dark">
+    <section class="section section-bg-fondo1 section-on-dark">
       <div class="container">
         <div class="section-header">
           <h2>Soluciones a la medida para necesidades específicas</h2>
         </div>
         <div class="audience-grid">
-          <article class="audience-card audience-card--blue">
-            <img src="images/corporacion.jpg" alt="Empresas y corporaciones" loading="lazy">
-            <h3>Empresas, Corporaciones e instituciones</h3>
-            <p>Organizaciones con grandes volúmenes de documentos necesitan sistemas robustos que brinden seguridad y confiabilidad, así como acceso controlado y oportuno a la información.</p>
+          <article class="expandable-card expandable-card--blue" data-expandable>
+            <h2 class="card-title">Empresas<br>Corporaciones instituciones</h2>
+            <div class="expandable-text">
+              <p>Organizaciones con grandes volúmenes de documentos necesitan sistemas robustos que brinden seguridad y confiabilidad, así como acceso controlado y oportuno a la información.</p>
+            </div>
+            <div class="card-content">
+              <img src="images/corporacion.jpg" alt="Empresas y corporaciones" loading="lazy">
+            </div>
+            <button class="toggle-button" type="button" aria-label="Expandir información"></button>
           </article>
-          <article class="audience-card audience-card--green">
-            <img src="images/pymes.jpg" alt="PYMES y negocios" loading="lazy">
-            <h3>Pequeñas, Medianas Empresas y Negocios</h3>
-            <p>Pequeñas Empresas y Negocios en crecimiento que requieren soluciones prácticas y fáciles de implementar para mantener sus memorias, información y documentos organizados y disponibles.</p>
+          <article class="expandable-card expandable-card--green" data-expandable>
+            <h2 class="card-title">Pequeñas,<br>Medianas Empresas y Negocios</h2>
+            <div class="expandable-text">
+              <p>Pequeñas Empresas y Negocios en crecimiento que requieren soluciones prácticas y fáciles de implementar para mantener sus memorias, información y documentos organizados y disponibles.</p>
+            </div>
+            <div class="card-content">
+              <img src="images/pymes.jpg" alt="PYMES y negocios" loading="lazy">
+            </div>
+            <button class="toggle-button" type="button" aria-label="Expandir información"></button>
           </article>
-          <article class="audience-card audience-card--orange">
-            <img src="images/profesional.jpg" alt="Profesionales independientes" loading="lazy">
-            <h3>Profesionales y Personas Independientes</h3>
-            <p>Profesionales independientes y/o negocios personales que requieren organización y disponibilidad permanente de la información y documentos.</p>
+          <article class="expandable-card expandable-card--glass" data-expandable>
+            <h2 class="card-title">Profesionales y Personas<br>Independientes</h2>
+            <div class="expandable-text">
+              <p>Profesionales independientes y/o negocios personales que requieren organización y disponibilidad permanente de la información y documentos.</p>
+            </div>
+            <div class="card-content">
+              <img src="images/profesional.jpg" alt="Profesionales independientes" loading="lazy">
+            </div>
+            <button class="toggle-button" type="button" aria-label="Expandir información"></button>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="section section-dark">
+    <section class="section section-bg-fondo1 section-on-dark">
       <div class="container">
         <div class="section-header">
           <h2>Explora. Aprende. Innova.</h2>
@@ -161,45 +180,48 @@
       </div>
     </section>
 
-    <section class="cta-section section-dark">
+    <section class="cta-section section-bg-fondo1 section-on-dark">
       <div class="container cta-panel">
         <div class="cta-content">
           <h2>Convierta sus documentos y archivos en su mayor fortaleza.</h2>
           <p class="cta-sub">¿Listo para generar una solución a la medida de sus necesidades?</p>
-          <a href="contacto.html#formulario" class="btn btn-primary">Agenda una reunión</a>
+          <a href="contacto.html#formulario" class="btn btn-primary">
+            Agenda una reunión
+            <span class="btn-icon" aria-hidden="true">
+              <svg viewBox="0 0 448 512"><path d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z"/></svg>
+            </span>
+          </a>
         </div>
         <div class="cta-image-wrap">
-          <img
-            src="images/cta-footer.png"
-            alt="Equipo DATA S.A."
-            width="800"
-            height="441"
-            loading="lazy"
-          >
+          <img src="images/cta-footer.png" alt="Equipo DATA S.A." width="800" height="441" loading="lazy">
         </div>
       </div>
     </section>
   </main>
 
   <footer class="site-footer section-bg-footer">
-    <div class="container footer-inner">
-      <p>&copy; <span id="year"></span> DATA S.A. Todos los derechos reservados.</p>
-      <div class="footer-links">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <img src="images/footer-logo.png" alt="DATA S.A." width="220" height="32">
+        <p>Derechos reservados de Data Management &amp; Outsourcing S.A.</p>
+        <p>&copy; <span id="year"></span> DATA S.A.</p>
+      </div>
+      <div class="footer-contact">
+        <p><strong>Dirección</strong>Víctor Mideros S20-08 y Efraín Recalde L10- D4<br>Quito, Pichincha - Ecuador<br>Zona Postal 170157</p>
+      </div>
+      <div class="footer-contact">
+        <p><strong>Teléfono</strong>099 – 335-0717</p>
+        <p><strong>Correo Electrónico</strong><a href="mailto:info@data-mo.com">info@data-mo.com</a></p>
+      </div>
+      <div class="footer-links-col">
+        <h4>Enlaces</h4>
         <a href="/">Inicio</a>
         <a href="contacto.html">Contacto</a>
+        <a href="https://datasaec.com/nosotros/">Nosotros</a>
       </div>
     </div>
   </footer>
 
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-
-    const toggle = document.querySelector('.menu-toggle');
-    const nav = document.getElementById('site-nav');
-    toggle.addEventListener('click', () => {
-      const open = nav.classList.toggle('is-open');
-      toggle.setAttribute('aria-expanded', open);
-    });
-  </script>
+  <script src="js/site.js"></script>
 </body>
 </html>
