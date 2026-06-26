@@ -1,18 +1,195 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>DATA S.A. — datasaec.cloud</title>
-  <style>
-    body { font-family: "Segoe UI", system-ui, sans-serif; max-width: 42rem; margin: 3rem auto; padding: 0 1.25rem; color: #1a2a3a; }
-    h1 { color: #3C5F8D; }
-    p { line-height: 1.5; }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="DATA S.A. — Soluciones integrales en gestión documental, archivística y digitalización para empresas e instituciones en Costa Rica.">
+  <title>DATA S.A. — Gestión documental y digitalización</title>
+  <link rel="stylesheet" href="css/site.css">
 </head>
 <body>
-  <h1>DATA S.A.</h1>
-  <p>Sitio estático en Azure — <strong>datasaec.cloud</strong> (prueba).</p>
-  <p>Si ve esta página, el despliegue funcionó.</p>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="/" class="brand">
+        <span class="brand-name">DATA S.A.</span>
+        <span class="brand-tagline">Gestión documental · Archivística · Digitalización</span>
+      </a>
+      <button class="menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="site-nav">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <path d="M4 7h16M4 12h16M4 17h16"/>
+        </svg>
+      </button>
+      <nav id="site-nav" class="site-nav">
+        <a href="/" aria-current="page">Inicio</a>
+        <a href="#servicios">Servicios</a>
+        <a href="contacto.html">Contacto</a>
+        <a href="contacto.html#formulario" class="nav-cta">Agenda una reunión</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <h1>Convierte tus documentos y archivos en tu mayor fortaleza</h1>
+          <p class="hero-lead">Soluciones integrales en gestión documental, archivística y digitalización.</p>
+          <a href="contacto.html#formulario" class="btn btn-primary">Agenda una reunión</a>
+        </div>
+        <img
+          class="hero-image"
+          src="images/compu.png"
+          alt="Ilustración de gestión documental digital"
+          width="750"
+          height="522"
+          loading="eager"
+        >
+      </div>
+    </section>
+
+    <section id="servicios" class="section section-alt">
+      <div class="container">
+        <div class="section-header">
+          <h2>Organización, control y acceso inteligente</h2>
+          <p>Tres pilares para transformar la información de su organización en un activo estratégico.</p>
+        </div>
+        <div class="services-grid">
+          <article class="service-card">
+            <img src="images/gestion-documental.png" alt="" width="100" height="100">
+            <h3>Gestión documental</h3>
+            <p>Permite organizar, controlar y proteger la información de la empresa, asegurando acceso rápido, eficiente y seguro. Formatos coherentes y normatizados.</p>
+          </article>
+          <article class="service-card">
+            <img src="images/archivistica.png" alt="" width="100" height="100">
+            <h3>Archivística y estructuración</h3>
+            <p>Estructura y almacena archivos físicos y digitales garantizando la preservación documental y la memoria institucional, dentro del marco legal vigente.</p>
+          </article>
+          <article class="service-card">
+            <img src="images/digitalizacion.png" alt="" width="100" height="100">
+            <h3>Digitalización documental</h3>
+            <p>Convierte los archivos físicos en documentos digitales seguros y accesibles.</p>
+          </article>
+        </div>
+        <p class="service-note">Clasificación, codificación y metadata asistida con inteligencia artificial.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Soluciones a la medida para cada tipo de organización</h2>
+        </div>
+        <div class="sectors-grid">
+          <article class="sector-block">
+            <img class="sector-image" src="images/sector-publico.png" alt="Sector público" width="650" height="568" loading="lazy">
+            <h3>Sector público</h3>
+            <p>Gestión responsable, siempre dentro del marco legal vigente.</p>
+            <p>Garantía de cumplir con la normatividad en gestión documental y archivística, transparencia de la información y protección de datos personales.</p>
+          </article>
+          <article class="sector-block">
+            <img class="sector-image" src="images/sector-privado.png" alt="Sector privado" width="650" height="613" loading="lazy">
+            <h3>Sector privado</h3>
+            <p>Optimización de la relación costo/beneficio en el manejo de la información, documentación y archivos.</p>
+            <p>Automatización de flujos de trabajo e información, así como optimización de procesos para un control total de las operaciones.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-header">
+          <h2>Soluciones a la medida para necesidades específicas</h2>
+        </div>
+        <div class="audience-grid">
+          <article class="audience-card">
+            <img src="images/corporacion.jpg" alt="Empresas y corporaciones" loading="lazy">
+            <div class="audience-card-body">
+              <h3>Empresas, corporaciones e instituciones</h3>
+              <p>Organizaciones con grandes volúmenes de documentos necesitan sistemas robustos que brinden seguridad y confiabilidad, así como acceso controlado y oportuno a la información.</p>
+            </div>
+          </article>
+          <article class="audience-card">
+            <img src="images/pymes.jpg" alt="PYMES y negocios" loading="lazy">
+            <div class="audience-card-body">
+              <h3>Pequeñas y medianas empresas y negocios</h3>
+              <p>Empresas en crecimiento que requieren soluciones prácticas y fáciles de implementar para mantener sus memorias, información y documentos organizados y disponibles.</p>
+            </div>
+          </article>
+          <article class="audience-card">
+            <img src="images/profesional.jpg" alt="Profesionales independientes" loading="lazy">
+            <div class="audience-card-body">
+              <h3>Profesionales y personas independientes</h3>
+              <p>Profesionales independientes y negocios personales que requieren organización y disponibilidad permanente de la información y documentos.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Explora. Aprende. Innova.</h2>
+          <p>Lo último en DATA S.A.</p>
+        </div>
+        <div class="news-grid">
+          <article class="news-card">
+            <img src="images/gestion-documental.png" alt="" width="80" height="80">
+            <div>
+              <h3>Nueva ley de protección de datos en vigencia</h3>
+              <p>Conozca cómo la normativa actual impacta la gestión documental y el tratamiento de datos personales en su organización.</p>
+            </div>
+          </article>
+          <article class="news-card">
+            <img src="images/digitalizacion.png" alt="" width="80" height="80">
+            <div>
+              <h3>Digitalización con inteligencia artificial</h3>
+              <p>Clasificación y metadata asistida para acelerar la conversión de archivos físicos en información útil y accesible.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section">
+      <div class="container cta-grid">
+        <div class="cta-content">
+          <h2>Convierta sus documentos y archivos en su mayor fortaleza</h2>
+          <p class="cta-sub">¿Listo para generar una solución a la medida de sus necesidades?</p>
+          <a href="contacto.html#formulario" class="btn btn-primary">Agenda una reunión</a>
+        </div>
+        <img
+          class="cta-image"
+          src="images/cta-footer.png"
+          alt="Equipo DATA S.A."
+          width="800"
+          height="441"
+          loading="lazy"
+        >
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> DATA S.A. Todos los derechos reservados.</p>
+      <div class="footer-links">
+        <a href="/">Inicio</a>
+        <a href="contacto.html">Contacto</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    const toggle = document.querySelector('.menu-toggle');
+    const nav = document.getElementById('site-nav');
+    toggle.addEventListener('click', () => {
+      const open = nav.classList.toggle('is-open');
+      toggle.setAttribute('aria-expanded', open);
+    });
+  </script>
 </body>
 </html>
